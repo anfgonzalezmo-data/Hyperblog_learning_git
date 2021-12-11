@@ -1,0 +1,5 @@
+Esta es el archivo de prueba creado para el curso de platzi
+
+de git y github
+
+saludos
