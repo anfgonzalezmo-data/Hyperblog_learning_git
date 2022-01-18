@@ -1,0 +1,4 @@
+prueba de eliminacion total del texto en los cambios
+segunda linea
+tercera linea
+fin
