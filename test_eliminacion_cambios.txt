@@ -1,3 +1,5 @@
 prueba de eliminacion total del texto en los cambios
+tercera linea
 segunda linea
+cuarta linea
 fin
