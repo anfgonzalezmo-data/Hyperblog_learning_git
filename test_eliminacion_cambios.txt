@@ -4,4 +4,5 @@ tercera linea
 cuarta linea
 quinta linea
 sexta linea
+Entrada a la cabecera previa a la creación de la rama
 fin
