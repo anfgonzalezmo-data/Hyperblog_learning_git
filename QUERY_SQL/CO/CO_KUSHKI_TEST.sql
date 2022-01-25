@@ -1,4 +1,4 @@
-set fecha_ini='2021-01-01';
+set fecha_ini='2021-12-11';
 set fecha_fin='2021-12-31';
 --NO_CACHE;
 with base as (
