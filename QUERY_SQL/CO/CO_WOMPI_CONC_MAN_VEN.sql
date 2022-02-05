@@ -27,8 +27,8 @@ left join co_pg_ms_payment_transactions_public.transactions t on p.transaction_i
 left join co_pg_ms_payment_transactions_public.authorizations au on au.id= p.authorization_id                                      
 left join co_PG_MS_USER_ASSET_ACCOUNT_PUBLIC.ACCOUNTS_OFUSCATED a on a.id::text = p.payment_method_token::text 
 left join  rappi_payments_staging.comercios_rappi c1 on c1.type = 'Tradicional' and a.card_type = c1.card_type and t.GATEWAY_TOKEN = c1.GATEWAY_TOKEN and c1.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
 left join rappi_payments_staging.comercios_rappi c4 on c4.type = 'Gateway-Tarjeta' and a.card_type = c4.card_type and t.GATEWAY_TYPE = c4.GATEWAY_TOKEN and c4.country = 'CO'
 where o.FECHA::date between $fecha_ini::date and $fecha_fin::date
   
@@ -53,8 +53,8 @@ left join co_pg_ms_payment_transactions_public.transactions t on p.transaction_i
 left join co_pg_ms_payment_transactions_public.authorizations au on au.id= p.authorization_id                                          
 left join co_PG_MS_USER_ASSET_ACCOUNT_PUBLIC.ACCOUNTS_OFUSCATED a on a.id::text = p.payment_method_token::text 
 left join  rappi_payments_staging.comercios_rappi c1 on c1.type = 'Tradicional' and a.card_type = c1.card_type and t.GATEWAY_TOKEN = c1.GATEWAY_TOKEN and c1.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
 left join rappi_payments_staging.comercios_rappi c4 on c4.type = 'Gateway-Tarjeta' and a.card_type = c4.card_type and t.GATEWAY_TYPE = c4.GATEWAY_TOKEN and c4.country = 'CO'
 where p.created_at::date between $fecha_ini::date and $fecha_fin::date
   and p.reference_model <> 'Order'
@@ -84,8 +84,8 @@ left join co_pg_ms_payment_transactions_public.transactions t on r.transaction_i
 left join co_pg_ms_payment_transactions_public.authorizations au on au.id= p.authorization_id                                          
 left join co_PG_MS_USER_ASSET_ACCOUNT_PUBLIC.ACCOUNTS_OFUSCATED a on a.id::text = p.payment_method_token::text and t.GATEWAY_TYPE not in ('RappiPay','bank_account')
 left join  rappi_payments_staging.comercios_rappi c1 on c1.type = 'Tradicional' and a.card_type = c1.card_type and t.GATEWAY_TOKEN = c1.GATEWAY_TOKEN and c1.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
 left join rappi_payments_staging.comercios_rappi c4 on c4.type = 'Gateway-Tarjeta' and a.card_type = c4.card_type and t.GATEWAY_TYPE = c4.GATEWAY_TOKEN and c4.country = 'CO'
 where o.FECHA::date between $fecha_ini::date and $fecha_fin::date
   
@@ -111,8 +111,8 @@ left join co_pg_ms_payment_transactions_public.transactions t on r.transaction_i
 left join co_pg_ms_payment_transactions_public.authorizations au on au.id= p.authorization_id                                          
 left join co_PG_MS_USER_ASSET_ACCOUNT_PUBLIC.ACCOUNTS_OFUSCATED a on a.id::text = p.payment_method_token::text 
 left join  rappi_payments_staging.comercios_rappi c1 on c1.type = 'Tradicional' and a.card_type = c1.card_type and t.GATEWAY_TOKEN = c1.GATEWAY_TOKEN and c1.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
-  left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c2 on c2.type = 'Sin Tarjeta' and a.card_type is null and t.GATEWAY_TOKEN = c2.GATEWAY_TOKEN and c2.country = 'CO'
+left join  rappi_payments_staging.comercios_rappi c3 on c3.type = 'Por Gateway' and a.card_type is null and t.GATEWAY_TYPE = c3.GATEWAY_TOKEN and c3.country = 'CO'
 left join rappi_payments_staging.comercios_rappi c4 on c4.type = 'Gateway-Tarjeta' and a.card_type = c4.card_type and t.GATEWAY_TYPE = c4.GATEWAY_TOKEN and c4.country = 'CO'
 where r.created_at::date between $fecha_ini::date and $fecha_fin::date
   and r.reference_model <> 'Order'
@@ -131,14 +131,21 @@ where SKT__UNIQUENESS=1
 )
 
 select 
-mes::date as mes
-,SUM(amount) as ventas_adq_sim
-,SUM(total) as ventas_rappi_sim
-,(sum(amount) / sum(total)) as conciliacion
-,sum(fee_Wompi) as FEE_calculado_Wompi
---,sum(COSTO_FEE_TRANS_rappi) as FEE_Rappi
-,COUNT(distinct SKT_ID) as num_trx_adq
-,COUNT(distinct gateway_transaction_id) as num_trx_rappi
+mes::date as FECHA
+,ADQUIRIENTE
+,'Ventas' as RUBRO
+,SUM(amount) as VENTAS_ADQ_MAN
+,SUM(total) as VENTAS_RAPPI_MAN
+,div0(VENTAS_ADQ_MAN,VENTAS_RAPPI_MAN) as CONC_MAN_VEN
+,SUM(fee_Wompi) AS FEE_ADQ_MAN
+,sum(fee_Wompi) as FEE_RAPPI_MAN
+,div0(FEE_ADQ_MAN,FEE_RAPPI_MAN) AS CONC_MAN_FEE
+,SUM(IVACOMISION+RETEICA+RETEIVA+RETEFUENTE+IMPOCONSUMO) as TAX_ADQ_MAN
+,FEE_RAPPI_MAN*0.19 AS TAX_RAPPI_MAN
+,DIV0(TAX_ADQ_MAN,TAX_RAPPI_MAN) as CONC_MAN_TAX
+,COUNT(distinct SKT_ID) as TRX_ADQ
+,COUNT(distinct gateway_transaction_id) as TRX_RAPPI
+,TRX_ADQ-TRX_RAPPI AS FALTANTES
 from
 (
 select *
@@ -151,7 +158,8 @@ and wompi.amount = base.total
 where 1=1 and 1=1 
 )
 where rn=1
-group by 1
+group by 1,2,3
 order by 1
+
 
 
