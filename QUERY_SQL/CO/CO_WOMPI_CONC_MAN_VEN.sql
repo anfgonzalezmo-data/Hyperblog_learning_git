@@ -1,5 +1,5 @@
-set fecha_ini='2021-01-01';
-set fecha_fin='2021-12-31';
+set fecha_ini='2021-06-01';
+set fecha_fin='2022-02-05';
 
 -----------------CONCILIACION WOMPI---------------
 
@@ -131,7 +131,8 @@ where SKT__UNIQUENESS=1
 )
 
 select 
-mes::date as FECHA
+'Colombia' as PAIS
+,mes::date as FECHA
 ,ADQUIRIENTE
 ,'Ventas' as RUBRO
 ,SUM(amount) as VENTAS_ADQ_MAN
@@ -159,7 +160,7 @@ where 1=1 and 1=1
 )
 where rn=1
 group by 1,2,3
-order by 1
+order by 1,2
 
 
 
