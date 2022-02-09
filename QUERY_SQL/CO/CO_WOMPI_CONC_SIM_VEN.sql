@@ -1,5 +1,5 @@
-set fecha_ini='2021-01-01';
-set fecha_fin='2021-12-31';
+set fecha_ini='2021-06-01';
+set fecha_fin='2022-02-05';
 
 -----------------CONCILIACION WOMPI---------------
 
