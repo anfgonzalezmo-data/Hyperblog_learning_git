@@ -1,0 +1,8 @@
+prueba de eliminacion total del texto en los cambios
+segunda linea
+tercera linea
+cuarta linea
+quinta linea
+sexta linea
+Entrada a la cabecera previa a la creación de la rama
+fin
