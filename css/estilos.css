@@ -5,6 +5,24 @@ body
     font-family: Arial;
     font-size: 16 px;
 }
+
+#cabecera
+{
+background: #33F;
+box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.75);
+color: white;
+font-weight: bold;
+margin: 0;
+padding: 0.5em;
+}
+#cavecera #tagline
+{
+    padding: 0 0 0 1em;
+    font-weight: normal;
+    font-size: 0.8em;
+
+}
+
 #container
 {
     width: 70%;
@@ -16,4 +34,10 @@ body
 #container h1
 {
     font-size: 20px;
+}
+
+#post
+{
+    padding: 1em;
+
 }
