@@ -15,7 +15,7 @@ font-weight: bold;
 margin: 0;
 padding: 0.5em;
 }
-#cavecera #tagline
+#cabecera #tagline
 {
     padding: 0 0 0 1em;
     font-weight: normal;
@@ -40,4 +40,12 @@ padding: 0.5em;
 {
     padding: 1em;
 
+}
+
+#footer
+{
+    background: #777;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
 }
