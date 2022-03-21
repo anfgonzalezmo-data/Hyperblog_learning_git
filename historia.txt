@@ -3,6 +3,7 @@ Esta es el archivo de prueba creado para el curso de platzi
 de git y github se anade el primer cambio al archivo de historia.txt
 
 Se inluye al usuario2 como colaborador del repositorio
+Creo mi primer Fork y esta es mi contribucion
 
 Incluyo un segundo cambio para rastrear
 saludos
