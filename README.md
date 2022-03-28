@@ -1,4 +1,4 @@
-#Hyperblog
+# Hyperblog
 
 Un blog creado como práctica para el curso de github de platzi
 >El curso de github en platzi es lo que me faltaba para triplicar mi salario y lanzarme a un emprendimiento en la industria digital.
