@@ -5,5 +5,7 @@ de git y github se anade el primer cambio al archivo de historia.txt
 Se inluye al usuario2 como colaborador del repositorio
 Creo mi primer Fork y esta es mi contribucion
 
+Master 1
+
 Incluyo un segundo cambio para rastrear
 saludos
